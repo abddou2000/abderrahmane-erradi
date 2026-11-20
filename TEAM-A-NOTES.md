@@ -91,3 +91,6 @@ Vite version: 4.1.4.
   écran LinkedIn inclus) avec un léger flottement CSS. Pour réactiver la 3D : réimporter `ComputersCanvas` dans `Hero.jsx`.
   Pour régénérer l'image : `../assets/capture/receiver.cjs` + `canvas.toDataURL()` dans le navigateur.
 - Titre du hero redimensionné pour la demi-colonne (`styles.js`), animation du portrait passée en "up" (évite le débordement horizontal mobile).
+- Déployé sur Vercel (projet `abderrahmane-erradi`, équipe Abderrahmane's projects) : https://abderrahmane-erradi.vercel.app
+  Redéployer : `npx vercel deploy --prod --scope abderrahmanes-projects-d81352ca` depuis ce dossier.
+  `.vercelignore` exclut node_modules, dist, .env*.local et `public/desktop_pc` (scène 3D inutilisée).

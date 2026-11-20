@@ -1,0 +1,8 @@
+node_modules
+dist
+.git
+.env
+# Scene 3D de l ordinateur desactivee (remplacee par src/assets/computer.webp)
+public/desktop_pc
+.env*.local
+.vercel
