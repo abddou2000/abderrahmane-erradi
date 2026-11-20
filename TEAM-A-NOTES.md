@@ -84,3 +84,5 @@ Vite version: 4.1.4.
   phrase dans l'Aperçu, badge « En cours » sur la licence SupMTI (`education[0].current`), title/meta de la page.
 - Mobile : les 4 cartes services passent en grille 2×2 centrée (`About.jsx`), cartes plus compactes sous 640px.
   Débordement horizontal corrigé : titre du hero réduit à 32px sous 450px (`styles.js`), badge `max-w-full`.
+- Photo professionnelle intégrée : `src/assets/avatar.jpg` + `public/avatar.jpg` (navbar, og:image, recadrage carré) et
+  `src/assets/portrait.jpg` affiché dans l'Aperçu (carte portrait à droite du texte, `About.jsx`). Source : `../assets/photo-pro.png`.

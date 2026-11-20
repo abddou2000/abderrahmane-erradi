@@ -1,5 +1,6 @@
 import logo from "./logo.svg";
 import avatar from "./avatar.jpg";
+import portrait from "./portrait.jpg";
 import backend from "./backend.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
@@ -39,6 +40,7 @@ import inventory from "./projects/inventory.svg";
 export {
   logo,
   avatar,
+  portrait,
   backend,
   mobile,
   web,

@@ -3,7 +3,8 @@ import Tilt from "react-tilt";
 import { motion } from "framer-motion";
 
 import { styles } from "../styles";
-import { services } from "../constants";
+import { services, profile } from "../constants";
+import { portrait } from "../assets";
 import { SectionWrapper } from "../hoc";
 import { fadeIn, textVariant } from "../utils/motion";
 
@@ -39,23 +40,46 @@ const About = () => {
         <h2 className={styles.sectionHeadText}>Aperçu.</h2>
       </motion.div>
 
-      <motion.p
-        variants={fadeIn("", "", 0.1, 1)}
-        className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
-      >
-        Développeur full stack basé à Marrakech et futur ingénieur en
-        systèmes informatiques (cycle d'ingénieur en cours à SupMTI), avec
-        plus de 4 ans d'expérience en PHP/Laravel, JavaScript, React, React
-        Native et SQL.
-        Je conçois des solutions web et mobiles, je digitalise des processus
-        métiers, j'intègre des APIs et j'optimise les flux applicatifs. Mon
-        expérience ERP couvre le stock, les ventes, les achats, la finance et la
-        qualité (SMQ) — des compétences directement mobilisables pour la
-        conception de workflows métiers. Cette formation d'ingénieur vient
-        consolider mon expérience terrain par une vision architecture, qualité
-        et conduite de projet. Organisé, rigoureux et autonome, j'aime
-        travailler en équipe et résoudre des problèmes concrets.
-      </motion.p>
+      <div className='mt-4 flex flex-col lg:flex-row lg:items-start gap-10'>
+        <motion.p
+          variants={fadeIn("", "", 0.1, 1)}
+          className='text-secondary text-[17px] max-w-3xl leading-[30px] flex-1'
+        >
+          Développeur full stack basé à Marrakech et futur ingénieur en
+          systèmes informatiques (cycle d'ingénieur en cours à SupMTI), avec
+          plus de 4 ans d'expérience en PHP/Laravel, JavaScript, React, React
+          Native et SQL.
+          Je conçois des solutions web et mobiles, je digitalise des processus
+          métiers, j'intègre des APIs et j'optimise les flux applicatifs. Mon
+          expérience ERP couvre le stock, les ventes, les achats, la finance et la
+          qualité (SMQ) — des compétences directement mobilisables pour la
+          conception de workflows métiers. Cette formation d'ingénieur vient
+          consolider mon expérience terrain par une vision architecture, qualité
+          et conduite de projet. Organisé, rigoureux et autonome, j'aime
+          travailler en équipe et résoudre des problèmes concrets.
+        </motion.p>
+
+        <motion.div
+          variants={fadeIn("left", "spring", 0.3, 0.9)}
+          className='w-full max-w-[300px] lg:max-w-[340px] mx-auto lg:mx-0 shrink-0'
+        >
+          <Tilt options={{ max: 10, scale: 1.02, speed: 450 }}>
+            <div className='green-pink-gradient p-[2px] rounded-[24px] shadow-card'>
+              <div className='bg-tertiary rounded-[22px] p-2'>
+                <img
+                  src={portrait}
+                  alt={`Portrait de ${profile.name}`}
+                  className='w-full aspect-[4/5] object-cover rounded-[18px]'
+                />
+                <div className='px-2 pt-3 pb-2 text-center'>
+                  <p className='text-white font-semibold text-[16px]'>{profile.name}</p>
+                  <p className='text-secondary text-[13px]'>{profile.headline}</p>
+                </div>
+              </div>
+            </div>
+          </Tilt>
+        </motion.div>
+      </div>
 
       <div className='mt-12 sm:mt-20 grid grid-cols-2 gap-4 sm:flex sm:flex-wrap sm:justify-center lg:justify-start sm:gap-10'>
         {services.map((service, index) => (
