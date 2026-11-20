@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="720" height="460" viewBox="0 0 720 460">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f0513f"/>
+      <stop offset="1" stop-color="#915EFF"/>
+    </linearGradient>
+  </defs>
+  <rect width="720" height="460" rx="32" fill="url(#bg)"/>
+  <g opacity="0.18" fill="#ffffff">
+    <circle cx="620" cy="80" r="140"/>
+    <circle cx="90" cy="420" r="110"/>
+  </g>
+  <rect x="48" y="48" width="624" height="364" rx="24" fill="#050816" opacity="0.72"/>
+  <text x="80" y="128" font-family="Poppins, Arial, sans-serif" font-size="22" font-weight="600" fill="#aaa6c3" letter-spacing="4">LARAVEL 10 + MYSQL</text>
+  <text x="80" y="210" font-family="Poppins, Arial, sans-serif" font-size="52" font-weight="800" fill="#ffffff">Inventory Management</text>
+  <text x="80" y="262" font-family="Poppins, Arial, sans-serif" font-size="24" fill="#dfd9ff">Stock, sales and purchasing with role-based dashboards</text>
+  <g font-family="Consolas, monospace" font-size="20" fill="#00cea8">
+    <text x="80" y="340">$ php artisan serve</text>
+  </g>
+</svg>
