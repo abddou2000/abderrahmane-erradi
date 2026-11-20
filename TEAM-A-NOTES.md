@@ -86,3 +86,8 @@ Vite version: 4.1.4.
   Débordement horizontal corrigé : titre du hero réduit à 32px sous 450px (`styles.js`), badge `max-w-full`.
 - Photo professionnelle intégrée : `src/assets/avatar.jpg` + `public/avatar.jpg` (navbar, og:image, recadrage carré) et
   `src/assets/portrait.jpg` affiché dans l'Aperçu (carte portrait à droite du texte, `About.jsx`). Source : `../assets/photo-pro.png`.
+- Hero en deux colonnes : texte à gauche, visuel à droite (plus de chevauchement). La scène 3D WebGL de l'ordinateur
+  est désactivée (trop lourde) et remplacée par un rendu statique `src/assets/computer.webp` (capture de la scène,
+  écran LinkedIn inclus) avec un léger flottement CSS. Pour réactiver la 3D : réimporter `ComputersCanvas` dans `Hero.jsx`.
+  Pour régénérer l'image : `../assets/capture/receiver.cjs` + `canvas.toDataURL()` dans le navigateur.
+- Titre du hero redimensionné pour la demi-colonne (`styles.js`), animation du portrait passée en "up" (évite le débordement horizontal mobile).

@@ -1,6 +1,7 @@
 import logo from "./logo.svg";
 import avatar from "./avatar.jpg";
 import portrait from "./portrait.jpg";
+import computer from "./computer.webp";
 import backend from "./backend.png";
 import mobile from "./mobile.png";
 import web from "./web.png";
@@ -41,6 +42,7 @@ export {
   logo,
   avatar,
   portrait,
+  computer,
   backend,
   mobile,
   web,

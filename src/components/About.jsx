@@ -60,7 +60,7 @@ const About = () => {
         </motion.p>
 
         <motion.div
-          variants={fadeIn("left", "spring", 0.3, 0.9)}
+          variants={fadeIn("up", "spring", 0.3, 0.9)}
           className='w-full max-w-[300px] lg:max-w-[340px] mx-auto lg:mx-0 shrink-0'
         >
           <Tilt options={{ max: 10, scale: 1.02, speed: 450 }}>
